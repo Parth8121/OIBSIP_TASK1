@@ -32,7 +32,7 @@ public class Weight extends AppCompatActivity {
         result = findViewById(R.id.result);
 
 
-        String[] from = {"Milligram(mg)","Gram(g)","Kilogram(kg"};
+        String[] from = {"Milligram(mg)","Gram(g)","Kilogram(kg)"};
         ArrayAdapter arr1 = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,from);
         sp1.setAdapter(arr1);
 
@@ -62,19 +62,19 @@ public class Weight extends AppCompatActivity {
                 }
                 else if(sp1.getSelectedItem().toString() == "Gram(g)" && sp2.getSelectedItem().toString() == "Milligram(mg)")
                 {
-                    ans = in * 1000;
+                    ans = in * (1000);
                 }
-                else if(sp1.getSelectedItem().toString() == "Gram(g)" && sp2.getSelectedItem().toString() == "Srilankan Rupees")
+                else if(sp1.getSelectedItem().toString() == "Gram(g)" && sp2.getSelectedItem().toString() == "Kilogram(kg)")
                 {
                     ans = in * (0.001);
                 }
                 else if(sp1.getSelectedItem().toString() == "Kilogram(kg)" && sp2.getSelectedItem().toString() == "Milligram(mg)")
                 {
-                    ans = in * 1000000;
+                    ans = in * (1000000);
                 }
                 else if(sp1.getSelectedItem().toString() == "Kilogram(kg)" && sp2.getSelectedItem().toString() == "Gram(g)")
                 {
-                    ans = in * 1000;
+                    ans = in * (1000);
                 }
                 else{
                     ans = in;
