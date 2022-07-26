@@ -80,9 +80,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="40dp"
-                    android:textColor="@color/black"
                     android:padding="10dp"
                     android:text="To:     "
+                    android:textColor="@color/black"
                     android:textSize="25sp" />
 
                 <Spinner
@@ -117,19 +117,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:text="Converted Value:"
                 android:textColor="@color/black"
-                android:layout_gravity="center_horizontal"
                 android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/black"
                 android:textSize="25sp" />
 
 
